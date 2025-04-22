@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fresh Kart</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Add some animations */
+    .fade-in {
+      animation: fadeIn ease 2s;
+    }
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    /* Add grow effect on hover */
+    .hover-grow:hover {
+      transform: scale(1.05);
+      transition: transform 0.3s ease;
+    }
+  </style>
+</head>
+
+<body class="bg-gray-50 text-gray-700">
+
+  <!-- Header -->
+  <header class="bg-white shadow-md">
+    <div class="container mx-auto p-5 flex flex-wrap flex-col md:flex-row items-center">
+      <a href="index.html" class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+        <img src="Images for website/Fresh Kart logo.jpeg" alt="Vegetable Logo" class="w-16 h-16 bg-green-480 p-2 rounded-full"> <!-- Vegetable logo here -->
+        <span class="ml-3 text-xl font-semibold">Fresh Kart</span>
+      </a>
+      <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+        <a href="contact.html" class="mr-5 hover:text-green-600 transition-colors">Contact Us</a>
+        <a href="about_us.html" class="mr-5 hover:text-green-600 transition-colors">About Us</a>
+        <a href="report.html" class="mr-5 hover:text-green-600 transition-colors">Report</a>
+        <a href="sign in.html" class="mr-5 hover:text-green-600 transition-colors hover-bounce">Sign In</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Product Section -->
+  <section class="text-gray-600 body-font fade-in">
+    <div class="container px-5 py-24 mx-auto">
+      <h2 class="text-3xl font-semibold text-center text-gray-900 mb-12">Explore Our Fresh Fruits</h2>
+      <div class="flex flex-wrap -m-4">
+        <!-- Product Card 1 -->
+        <div class="lg:w-1/4 md:w-1/2 p-4 hover-grow">
+          <a href="orange.html" class="block relative h-48 rounded overflow-hidden shadow-lg">
+            <img alt="Fresh Produce" class="object-cover object-center w-full h-full block" src="Images for website/orange.jpg">
+          </a>
+          <div class="mt-4 text-center">
+            <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">OUT OF STOCK</h3>
+            <h2 class="text-gray-900 text-lg font-medium">Oranges</h2>
+            <p class="mt-1">Rs 140 per Kg</p>
+          </div>
+        </div>
+
+        <!-- Product Card 2 -->
+        <div class="lg:w-1/4 md:w-1/2 p-4 hover-grow">
+          <a href = "apple.html" class="block relative h-48 rounded overflow-hidden shadow-lg">
+            <img alt="Fresh Produce" class="object-cover object-center w-full h-full block" src="Images for website/apple.jpg">
+          </a>
+          <div class="mt-4 text-center">
+            <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">IN STOCK</h3>
+            <h2 class="text-gray-900 text-lg font-medium">Jumla Apples</h2>
+            <p class="mt-1">Rs 200 per Kg</p>
+          </div>
+        </div>
+
+        <!-- Product Card 3 -->
+        <div class="lg:w-1/4 md:w-1/2 p-4 hover-grow">
+          <a href ="banana.html" class="block relative h-48 rounded overflow-hidden shadow-lg">
+            <img alt="Fresh Produce" class="object-cover object-center w-full h-full block" src="Images for website/banana.jpg">
+          </a>
+          <div class="mt-4 text-center">
+            <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">IN STOCK</h3>
+            <h2 class="text-gray-900 text-lg font-medium">Banans</h2>
+            <p class="mt-1">Rs 100 per Dozen</p>
+          </div>
+        </div>
+
+        <!-- Product Card 4 -->
+        <div class="lg:w-1/4 md:w-1/2 p-4 hover-grow">
+          <a href= "papaya.html"  class="block relative h-48 rounded overflow-hidden shadow-lg">
+            <img alt="Fresh Produce" class="object-cover object-center w-full h-full block" src="Images for website/papaya.jpg">
+          </a>
+          <div class="mt-4 text-center">
+            <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">IN STOCK</h3>
+            <h2 class="text-gray-900 text-lg font-medium">Papaya</h2>
+            <p class="mt-1">Rs 100 per Kg</p>
+          </div>
+        </div>
+         <!-- Product Card 5 -->
+        <div class="lg:w-1/4 md:w-1/2 p-4 hover-grow">
+          <a href= "pear.html"  class="block relative h-48 rounded overflow-hidden shadow-lg">
+            <img alt="Fresh Produce" class="object-cover object-center w-full h-full block" src="Images for website/pear.jpg">
+          </a>
+          <div class="mt-4 text-center">
+            <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">IN STOCK</h3>
+            <h2 class="text-gray-900 text-lg font-medium">Pear</h2>
+            <p class="mt-1">Rs 170 per Kg.</p>
+          </div>
+        </div>
+
+          <!-- Product Card 6 -->
+        <div class="lg:w-1/4 md:w-1/2 p-4 hover-grow">
+          <a href= "pineapple.html"  class="block relative h-48 rounded overflow-hidden shadow-lg">
+            <img alt="Fresh Produce" class="object-cover object-center w-full h-full block" src="Images for website/pineapple.jpg">
+          </a>
+          <div class="mt-4 text-center">
+            <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">OUT OF STOCK</h3>
+            <h2 class="text-gray-900 text-lg font-medium">Pineapple</h2>
+            <p class="mt-1">90 per Piece</p>
+          </div>
+        </div>
+       
+          <!-- Product Card 7 -->
+        <div class="lg:w-1/4 md:w-1/2 p-4 hover-grow">
+          <a href= "kiwi.html"  class="block relative h-48 rounded overflow-hidden shadow-lg">
+            <img alt="Fresh Produce" class="object-cover object-center w-full h-full block" src="Images for website/kiwi.jpg">
+          </a>
+          <div class="mt-4 text-center">
+            <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">IN STOCK</h3>
+            <h2 class="text-gray-900 text-lg font-medium">Kiwi</h2>
+            <p class="mt-1">Rs 600 per Kg</p>
+          </div>
+        </div>
+         <!-- Product Card 8 -->
+        <div class="lg:w-1/4 md:w-1/2 p-4 hover-grow">
+          <a href= "dragonfruit.html"  class="block relative h-48 rounded overflow-hidden shadow-lg">
+            <img alt="Fresh Produce" class="object-cover object-center w-full h-full block" src="Images for website/dragonfruit.jpg">
+          </a>
+          <div class="mt-4 text-center">
+            <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">IN STOCK</h3>
+            <h2 class="text-gray-900 text-lg font-medium">Dragon fruit</h2>
+            <p class="mt-1">Rs 350 per Kg</p>
+          </div>
+        </div>
+         <!-- Product Card 9 -->
+        <div class="lg:w-1/4 md:w-1/2 p-4 hover-grow">
+          <a href= "pomegranete.html"  class="block relative h-48 rounded overflow-hidden shadow-lg">
+            <img alt="Fresh Produce" class="object-cover object-center w-full h-full block" src="Images for website/pomegranete.jpg">
+          </a>
+          <div class="mt-4 text-center">
+            <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">IN STOCK</h3>
+            <h2 class="text-gray-900 text-lg font-medium">Pomegranete</h2>
+            <p class="mt-1">Rs 290 per Kg</p>
+          </div>
+        </div>
+         <!-- Product Card 10 -->
+        <div class="lg:w-1/4 md:w-1/2 p-4 hover-grow">
+          <a href= "guava.html"  class="block relative h-48 rounded overflow-hidden shadow-lg">
+            <img alt="Fresh Produce" class="object-cover object-center w-full h-full block" src="Images for website/guava.jpg">
+          </a>
+          <div class="mt-4 text-center">
+            <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">IN STOCK</h3>
+            <h2 class="text-gray-900 text-lg font-medium">Guava</h2>
+            <p class="mt-1">Rs 8 per Piece</p>
+          </div>
+        </div>
+         <!-- Product Card 11 -->
+        <div class="lg:w-1/4 md:w-1/2 p-4 hover-grow">
+          <a href= "grape.html"  class="block relative h-48 rounded overflow-hidden shadow-lg">
+            <img alt="Fresh Produce" class="object-cover object-center w-full h-full block" src="Images for website/grape.jpg">
+          </a>
+          <div class="mt-4 text-center">
+            <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">IN STOCK</h3>
+            <h2 class="text-gray-900 text-lg font-medium">Grapes</h2>
+            <p class="mt-1">Rs 365 per Kg</p>
+          </div>
+        </div>
+         <!-- Product Card 12 -->
+        <div class="lg:w-1/4 md:w-1/2 p-4 hover-grow">
+          <a href= "coconut.html"  class="block relative h-48 rounded overflow-hidden shadow-lg">
+            <img alt="Fresh Produce" class="object-cover object-center w-full h-full block" src="Images for website/coconut.jpg">
+          </a>
+          <div class="mt-4 text-center">
+            <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">OUT OF STOCK</h3>
+            <h2 class="text-gray-900 text-lg font-medium">Coconut</h2>
+            <p class="mt-1">Rs 50 per Piece</p>
+          </div>
+        </div>
+       
+      </div>
+    </div>
+  </section>
+  <!-- Footer -->
+  <footer class="bg-white shadow-md">
+    <div class="container mx-auto p-6 flex flex-col md:flex-row justify-between items-center">
+      <a href="index.html" class="flex items-center">
+        <img src="Images for website/Fresh Kart logo.jpeg" alt="Vegetable Logo" class="w-17 h-17 bg-green-500 p-2 rounded-full"> <!-- Vegetable logo here -->
+        <span class="ml-3 text-xl font-semibold text-gray-900">Fresh Kart</span>
+      </a>
+      <p class="text-sm text-gray-500 mt-4 md:mt-0">© 2025 Fresh Kart — All rights reserved.</p>
+     <div class="flex mt-4 md:mt-0 space-x-4">
+       <!-- <a href="https://www.facebook.com" class="text-gray-500 hover:text-green-600">Facebook</a>  -->
+      </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

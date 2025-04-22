@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Fresh Kart</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Import Google font - Poppins */
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      width: 100%;
+      background: #f3f4f6; /* Adjusted to match Fresh Kart's bg-gray-50 */
+    }
+
+    /* Fresh Kart Inline Styles */
+    .fade-in {
+      opacity: 0;
+      animation: fadeIn 1.5s ease-in-out forwards;
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+
+    .hover-grow:hover {
+      transform: scale(1.05);
+      transition: transform 0.3s ease;
+    }
+
+    .hover-bounce:hover {
+      transform: translateY(-5px);
+      transition: transform 0.3s ease;
+    }
+
+    a:hover, button:hover {
+      color: #16a34a;
+      transition: color 0.3s ease;
+    }
+
+    .button {
+      background-color: #16a34a;
+      color: white;
+      padding: 12px 24px;
+      font-size: 16px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    .button:hover {
+      background-color: #15803d;
+      transform: scale(1.05);
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    /* Login/Registration Styles */
+    .container {
+      position: relative;
+      max-width: 430px;
+      width: 100%;
+      background: #fff;
+      border-radius: 7px;
+      box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+      margin: 40px auto;
+    }
+
+    .container .registration {
+      display: none;
+    }
+
+    #check:checked ~ .registration {
+      display: block;
+    }
+
+    #check:checked ~ .login {
+      display: none;
+    }
+
+    #check {
+      display: none;
+    }
+
+    .container .form {
+      padding: 2rem;
+    }
+
+    .form header {
+      font-size: 2rem;
+      font-weight: 500;
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+
+    .form input {
+      height: 60px;
+      width: 100%;
+      padding: 0 15px;
+      font-size: 17px;
+      margin-bottom: 1.3rem;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      outline: none;
+    }
+
+    .form input:focus {
+      box-shadow: 0 1px 0 rgba(0,0,0,0.2);
+    }
+
+    .form a {
+      font-size: 16px;
+      color: #009579;
+      text-decoration: none;
+    }
+
+    .form a:hover {
+      text-decoration: underline;
+    }
+
+    .form input.button {
+      color: #fff;
+      background: #009579;
+      font-size: 1.2rem;
+      font-weight: 500;
+      letter-spacing: 1px;
+      margin-top: 1.7rem;
+      cursor: pointer;
+      transition: 0.4s;
+    }
+
+    .form input.button:hover {
+      background: #006653;
+    }
+
+    .signup {
+      font-size: 17px;
+      text-align: center;
+    }
+
+    .signup label {
+      color: #009579;
+      cursor: pointer;
+    }
+
+    .signup label:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-700">
+  <!-- Header -->
+  <header class="bg-white shadow-md">
+    <div class="container mx-auto p-5 flex flex-wrap flex-col md:flex-row items-center fade-in">
+      <a href="#" class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+        <a href="index.html" class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+        <img src="Images for website/Fresh Kart logo.jpeg" alt="Vegetable Logo" class="w-16 h-16 bg-green-480 p-2 rounded-full">
+        <span class="ml-3 text-xl font-semibold">Fresh Kart</span>
+      </a>
+      <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+        <a href="contact.html" class="mr-5 hover:text-green-600 transition-colors hover-bounce">Contact Us</a>
+        <a href="about_us.html" class="mr-5 hover:text-green-600 transition-colors hover-bounce">About Us</a>
+        <a href="report.html" class="mr-5 hover:text-green-600 transition-colors hover-bounce">Report</a>
+        <a href="sign in.html" class="mr-5 hover:text-green-600 transition-colors hover-bounce">Sign In</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Login/Registration Section -->
+  <div class="container">
+    <input type="checkbox" id="check">
+    <div class="login form">
+      <header>Login</header>
+      <form action="#">
+        <input type="text" placeholder="Enter your email">
+        <input type="password" placeholder="Enter your password">
+        <a href="#">Forgot password?</a>
+        <input type="button" class="button" value="Login">
+      </form>
+      <div class="signup">
+        <span class="signup">Don't have an account?
+         <label for="check">Signup</label>
+        </span>
+      </div>
+    </div>
+    <div class="registration form">
+      <header>Signup</header>
+      <form action="#">
+        <input type="text" placeholder="Enter your email">
+        <input type="password" placeholder="Create a password">
+        <input type="password" placeholder="Confirm your password">
+        <input type="button" class="button" value="Signup">
+      </form>
+      <div class="signup">
+        <span class="signup">Already have an account?
+         <label for="check">Login</label>
+        </span>
+      </div>
+    </div>
+  </div>
+
+        <!-- Footer Section -->
+<footer class="text-gray-600 body-font">
+  <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+    <a href = "index.html"class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+      <img src="Images for website/Fresh Kart logo.jpeg" alt="Vegetable Logo" class="w-17 h-17 bg-green-500 p-2 rounded-full">
+      <span class="ml-3 text-xl">Fresh Kart</span>
+    </a>
+    <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 2025 Fresh Kart — 
+     
+     <!--   Here is twitter handle and link
+        <a href="https://twitter.com" class="text-gray-600 ml-1" target="_blank">-->@freshkart</a>
+    </p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
